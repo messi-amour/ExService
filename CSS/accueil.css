@@ -1,0 +1,369 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Fond principal : #0F172A (bleu très sombre)
+
+Couleur primaire : #3B82F6 (bleu)
+
+Couleur secondaire : #8B5CF6 (violet)
+
+Texte principal : #FFFFFF
+
+Texte secondaire : #94A3B8
+
+Background section : #111827 */
+
+body{
+    background-color:#0F172A;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.logo{
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.menu a{
+    border: 3px solid #ffffff0c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 13px;
+    text-decoration: none;
+    color: #94A3B8;
+    font-weight: bolder;
+    font-size: small;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    background-color: #94A3B8;
+    color: #ffffff;
+}
+
+.btn-primary{
+    background: transparent;
+    border-radius: 8px;
+    padding: 12px 30px;
+    cursor: pointer;
+    border: 2px solid #94A3B8;
+    transition: all 0.3s ease;
+}
+
+.btn-primary a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+    background-color: #94A3B8;
+}
+
+.hero {
+  height: 100vh; /* toute la hauteur de l’écran */
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement */
+  text-align: center;      /* texte centré */
+  background: #0F172A;     /* fond sombre optionnel */
+  color: white;            /* texte lisible */
+  padding: 0 20px;         /* marge sur mobile */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #94A3B8;
+  color: #eef1f5;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #94A3B8;
+  color: white;
+}
+
+.btn-secondary a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    transform: scale(1.1);
+    background-color: #94A3B8;
+}
+
+.services {
+  padding: 0px 20px;
+  background: #111827; /* fond sombre */
+  color: white;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #94A3B8; /* texte secondaire */
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* permet au mobile de passer en colonne */
+}
+
+.card {
+  background: #1F2937; /* fond des cartes */
+  padding: 30px 20px;
+  border-radius: 12px;
+  flex: 1 1 250px; /* largeur minimum de 250px, flexible */
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #CBD5E1;
+}
+
+.about {
+  padding: 80px 20px;
+  background: #0F172A;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* permet la flexibilité sur mobile */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #CBD5E1;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Bouton */
+.btn-primary {
+  border-color: transparent;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+border: 2px solid #94A3B8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #94A3B8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Section Contact */
+.contact {
+  padding: 80px 20px;
+  background: #111827;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #94A3B8;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* pour mobile */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.contact-info {
+  flex: 1 1 400px;
+  text-align: left;
+  color: #CBD5E1;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  color: #3B82F6;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: #0F172A;
+  color: #94A3B8;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links li a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
